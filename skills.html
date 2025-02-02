@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marissa's Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Marissa Lee</h1>
+      <aside>
+        <nav>
+          <ol>
+            <li>
+              <a href="main.html">Welcome!</a>
+            </li>
+            <li>
+              <a href="experience.html">Experience and Education</a>
+            </li>
+            <li>
+              <a href="skills.html">Skills</a>
+            </li>
+            <li>
+              <a href="experimental.html">Experimental</a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+      <hr />
+    </header>
+
+    <main>
+      <noscript>
+        <p>
+          This site uses Javascript. If you don't see the correct content, your
+          browser might not support Javascript.
+        </p>
+      </noscript>
+
+      <div>
+        <h2>Skills</h2>
+        <table>
+          <caption>
+            My skills
+          </caption>
+          <colgroup>
+            <col />
+            <col />
+          </colgroup>
+          <tr>
+            <th scope="col">Skill</th>
+            <th scope="col">Proficiency</th>
+          </tr>
+          <tbody>
+            <tr>
+              <th scope="row">Java</th>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <th scope="row">Python</th>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <th scope="row">SQL</th>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <th scope="row">JavaScript</th>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <th scope="row">Tableau</th>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <th scope="row">HTML</th>
+              <td>Beginner</td>
+            </tr>
+            <tr>
+              <th scope="row">CSS</th>
+              <td>Beginner</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <h2>Contact Me</h2>
+      <address>
+        <a href="mailto:mal039@ucsd.edu">Email</a>
+        <br />
+        <a href="https://www.linkedin.com/in/xmarissalee/">LinkedIn</a>
+        <br />
+        <a href="https://github.com/marissa-lee">GitHub</a>
+      </address>
+
+      <div>
+        <dialog>
+          <form action="" method="get">
+            <fieldset>
+              <legend>Send me a message!</legend>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" />
+              <br />
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" />
+              <br />
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                cols="30"
+              ></textarea>
+              <br />
+              <input type="submit" value="Send" />
+            </fieldset>
+          </form>
+          <button>Close</button>
+        </dialog>
+        <button>Send me a message!</button>
+      </div>
+
+      <search>
+        <form action="./search/">
+          <label for="search">Search through my site</label>
+          <input type="search" id="search" name="q" />
+          <button type="submit">Search</button>
+        </form>
+      </search>
+    </footer>
+  </body>
+</html>

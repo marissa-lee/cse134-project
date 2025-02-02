@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marissa's Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <header>
+      <h1>Marissa Lee</h1>
+      <aside>
+        <nav>
+          <ol>
+            <li>
+              <a href="main.html">Welcome!</a>
+            </li>
+            <li>
+              <a href="experience.html">Experience and Education</a>
+            </li>
+            <li>
+              <a href="skills.html">Skills</a>
+            </li>
+            <li>
+              <a href="experimental.html">Experimental</a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+      <hr>
+    </header>
+
+    <h2>Experimental</h2>
+
+    <div>
+        <p>Blockquote</p>
+        <blockquote>insert quote</blockquote>
+
+    <div>
+        <p>Cite</p>
+        cited <cite>from here</cite>
+    </div>
+
+    <div>
+        <p>Pre</p>
+        <pre>
+            public class MyClass {
+                public static void main(String[] args) {
+                    // code!!
+                }
+            }
+        </pre>
+    </div>
+      
+    <div>
+        <p>IFrame</p>
+        <iframe
+            title="Blueberry Article"
+            width="500"
+            height="200"
+            src="https://en.wikipedia.org/wiki/Blueberry">
+
+        </iframe>
+    </div>
+    
+    <div>
+        <p>Figure, figcaption, audio</p>
+        <figure>
+          <figcaption>Listen to a ding</figcaption>
+          <audio controls src="media/notification.mp3"></audio>
+        </figure>
+    </div>
+
+    <div>
+        <p>Video</p>
+        <video controls width="500">
+          <source src="media/demo.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div>
+        <p>Optgroup, option, select</p>
+        <label for="color-select">Choose a color</label>
+        <select id="color-select">
+          <optgroup label="Warm">
+            <option>Red</option>
+            <option>Orange</option>
+          </optgroup>
+          <optgroup label="Cool">
+            <option>Blue</option>
+            <option>Green</option>
+          </optgroup>
+        </select>
+    </div>
+   
+    <div>
+        <p>Datalist</p>
+        <label for="food-select">Choose a food</label>
+        <input list="food-list" id="food-select">
+        <datalist id="food-list">
+            <option value="Pizza"></option>
+            <option value="Pasta"></option>
+            <option value="Salad"></option>
+        </datalist>
+    </div>
+
+
+    <div>
+        <p>Deleted and inserted</p>
+        <del>
+            <p>deleted</p>
+        </del>
+        <ins>
+            <p>inserted</p>
+        </ins>
+    </div>
+
+    <div>
+        <p>Kbd</p>
+        <p>If I press the <kbd>Return</kbd> key, I usually hit enter</p>
+    </div>
+   
+    <div>
+        <p>Svg, canvas</p>
+        <svg width="100" height="100" >
+            <circle cx="50" cy="50" r="40" fill="green" />
+        </svg>
+        <canvas id="canvas" width="100" height="100"></canvas>
+    </div>
+
+  <footer>
+    <hr>
+    <h2>Contact Me</h2>
+    <address>
+      <a href="mailto:mal039@ucsd.edu">Email</a>
+      <br />
+      <a href="https://www.linkedin.com/in/xmarissalee/">LinkedIn</a>
+      <br />
+      <a href="https://github.com/marissa-lee">GitHub</a>
+    </address>
+    <div>
+      <dialog>
+        <form action="" method="get">
+          <fieldset>
+            <legend>Send me a message!</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+            <br />
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" />
+            <br />
+            <label for="message">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              cols="30"
+            ></textarea>
+            <br />
+            <input type="submit" value="Send" />
+          </fieldset>
+        </form>
+        <button>Close</button>
+      </dialog>
+      <button>Send me a message!</button>
+    </div>
+
+    <search>
+        <form action="./search/">
+          <label for="search">Search through my site</label>
+          <input type="search" id="search" name="q" />
+          <button type="submit">Search</button>
+        </form>
+      </search>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Marissa's Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Marissa Lee</h1>
+      <aside>
+        <nav>
+          <ol>
+            <li>
+              <a href="main.html">Welcome!</a>
+            </li>
+            <li>
+              <a href="experience.html">Experience and Education</a>
+            </li>
+            <li>
+              <a href="skills.html">Skills</a>
+            </li>
+            <li>
+              <a href="experimental.html">Experimental</a>
+            </li>
+          </ol>
+        </nav>
+      </aside>
+      <hr />
+    </header>
+
+    <main>
+      <aside></aside>
+      <noscript>
+        <p>
+          This site uses Javascript. If you don't see the correct content, your
+          browser might not support Javascript.
+        </p>
+      </noscript>
+
+      <div>
+        <h2>Experience</h2>
+        <section>
+          <h3>Business Analyst Intern, Deloitte</h3>
+          <span>Jun 2024 - Aug 2024</span>
+          <ul>
+            <li>
+              Conducted gap analysis on an internal auditing application, in
+              order to identify discrepancies and improve data accuracy
+            </li>
+            <li>
+              Developed user stories and design mockups in
+              <code><abbr>ADO</abbr>(Azure DevOps)</code>, effectively
+              translating business requirements into actionable tasks for the
+              development team to achieve business objectives
+            </li>
+            <li>
+              Constructed a <b>data dictionary</b> documenting the dashboard’s
+              business logic and architecture, establishing a reliable reference
+              that streamlines feedback and ensures data consistency
+            </li>
+            <li>
+              Collaborated with fellow interns to present a solution for
+              optimizing engagement with Deloitte interns, including cost
+              analyses and strategic recommendations based on business needs
+            </li>
+            <li>
+              Attended scrum meetings and stakeholder meetings within a SAFe
+              Agile framework
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Web Developer, Queues</h3>
+          <span>Jan 2024 - Present</span>
+          <ul>
+            <li>
+              Maintain and scale Queues, a full-stack web application supporting
+              <b>3,000+ users</b> and <b>100+ courses</b> to provide synchronous
+              one-on-one tutoring via a ticket system
+            </li>
+            <li>
+              Integrate <code>TypeScript</code> frontend with
+              <code>Flask</code> backend APIs to implement features such as
+              password reset workflow and ticket history pagination
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Social Computing Researcher, UCSD Design Lab</h3>
+          <span>Jan 2023 - Present</span>
+          <ul>
+            <li>
+              Designed and analyzed effective intervention strategies to address
+              misinformation in podcasts
+            </li>
+            <li>
+              Developed iOS and Android mobile apps using <code>Swift</code> and
+              <code>Java</code> that allow study participants to interact with
+              audio misinformation snippets and receive targeted interventions
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>NLP Researcher, UCSD Computing for Social Good Lab</h3>
+          <span>Sep 2022 -- Jun 2023</span>
+          <ul>
+            <li>
+              Analyzed the online discourse on mental burnout in Reddit
+              communities to identify key user needs and categorize the type of
+              support received
+            </li>
+            <li>
+              Cleaned and processed over <b>400,000 posts</b> and
+              <b>5.5 million comments</b>, partnering with health experts to
+              develop a clinically informed codebook for accurate data labeling
+            </li>
+            <li>
+              Leveraged <dfn>NLP techniques</dfn> (topic modeling, log odds) and
+              <dfn>supervised ML models</dfn> (SVM, BERT) to predict diagnostic
+              features of burnout, driving the development of actionable
+              insights that can inform targeted interventions
+            </li>
+            <li>
+              Presented findings at the UCSD Engineering Research Symposium and
+              the ERSP National Conference
+            </li>
+          </ul>
+        </section>
+
+        <template id="experience-template">
+          <section>
+            <h3></h3>
+            <span></span>
+            <ul></ul>
+          </section>
+        </template>
+      </div>
+
+      <hr />
+
+      <div>
+        <h2>Education</h2>
+        <dl>
+          <dt>
+            <strong>University of California San Diego</strong> (Jun 2022 - Sep
+            2026)
+          </dt>
+          <dd>Bachelors of Science in <em>Computer Science</em></dd>
+          <dd>GPA: 3.84</dd>
+          <dd>Honors: Regents Scholarship, Provost Honors</dd>
+          <dd>Organizations: Society of Women Engineers, Scholars Society</dd>
+          <br />
+          <dt>
+            <strong>University of Edinburgh</strong> (Aug 2024 - Dec 2024)
+          </dt>
+          <dd>Study Abroad semester</dd>
+        </dl>
+        <details>
+          <summary>Some Relevant Courses I Took</summary>
+          Data Structures, Algorithms, Databases, Statistical Methods, Discrete
+          Mathematics, Computer Security
+        </details>
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <h2>Contact Me</h2>
+      <address>
+        <a href="mailto:mal039@ucsd.edu">Email</a>
+        <br />
+        <a href="https://www.linkedin.com/in/xmarissalee/">LinkedIn</a>
+        <br />
+        <a href="https://github.com/marissa-lee">GitHub</a>
+      </address>
+
+      <div>
+        <dialog>
+          <form action="" method="get">
+            <fieldset>
+              <legend>Send me a message!</legend>
+              <label for="name">Name:</label>
+              <input type="text" name="name" id="name" />
+              <br />
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" />
+              <br />
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                cols="30"
+              ></textarea>
+              <br />
+              <input type="submit" value="Send" />
+            </fieldset>
+          </form>
+          <button>Close</button>
+        </dialog>
+        <button>Send me a message!</button>
+      </div>
+
+      <search>
+        <form action="./search/">
+          <label for="search">Search through my site</label>
+          <input type="search" id="search" name="q" />
+          <button type="submit">Search</button>
+        </form>
+      </search>
+    </footer>
+  </body>
+</html>
