@@ -3,9 +3,22 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="This is a personal website for Marissa Lee."/>
+    <meta name="author" content="Marissa Le"/>
+    <meta name="keywords" content="personal website, developer, portfolio"
     <title>Marissa's Site</title>
     <link rel="stylesheet" href="styles/style.css" />
     <script></script>
+    <style>
+      news-box {
+        padding: 3px 5px;
+        border-radius: 5px;
+        border: #278548 solid;
+        background-color: #dfffea;
+        text-align: center;
+        box-shadow: 10px 5px 5px rgb(202, 202, 202);
+      }
+    </style>
   </head>
 
   <body>
@@ -39,6 +52,19 @@
           browser might not support Javascript.
         </p>
       </noscript>
+
+      <news-box>No news yet but thanks for checking in!</news-box>
+      <hello-world></hello-world>
+      <script>
+        class HelloWorld extends HTMLElement {
+          constructor() {
+            super();
+            console.log("Hello World!");
+          }
+        }
+
+        customElements.define("hello-world", HelloWorld);
+      </script>
 
       <hgroup>
         <h2>About Me</h2>
